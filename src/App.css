@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: linear-gradient(to right, #7f7fd5, #86a8e7);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-app {
   display: flex;
+  /* align-items: center; */
+  justify-content: start;
   flex-direction: column;
+
+  width: 600px;
+  min-height: 350px;
+  margin: 120px auto;
+  background-color: #302b63;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.todo-form {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  width: 350px;
+  outline: none;
+  border: 2px solid #7d82b8;
+  border-radius: 4px 0 0 4px;
+  background: transparent;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #7d82b8;
+}
+
+.todo-button {
+  padding: 16px 0;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(to right, #7f7fd5, #86a8e7);
+  color: #fff;
+  text-transform: capitalize;
+  min-width: 80px;
+}
+
+.todo-list {
+  list-style: none;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  width: 90%;
+  padding: 14px;
+  margin: 5px auto;
+  border-radius: 4px;
+
+  color: #fff;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
 }
 
-.App-link {
-  color: #61dafb;
+.todo-item:nth-child(4n + 1) {
+  background: linear-gradient(90deg, #1fa2ff, #12d8fa);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-item:nth-child(4n + 2) {
+  background: linear-gradient(90deg, #fc67fa, #f4c4f3);
+}
+
+.todo-item:nth-child(4n + 3) {
+  background: linear-gradient(90deg, #4a00e0, #8e2de2);
+}
+
+.todo-item p {
+  cursor: pointer;
+}
+
+.control-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.control-icons svg {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.6;
 }
