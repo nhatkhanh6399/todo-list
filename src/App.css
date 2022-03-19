@@ -86,11 +86,11 @@ h1 {
 }
 
 .todo-item:nth-child(4n + 2) {
-  background: linear-gradient(90deg, #fc67fa, #f4c4f3);
+  background: linear-gradient(90deg, #4a00e0, #8e2de2);
 }
 
 .todo-item:nth-child(4n + 3) {
-  background: linear-gradient(90deg, #4a00e0, #8e2de2);
+  background: linear-gradient(90deg, #fc67fa, #f4c4f3);
 }
 
 .todo-item p {
