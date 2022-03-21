@@ -82,11 +82,11 @@ h1 {
 }
 
 .todo-item:nth-child(4n + 1) {
-  background: linear-gradient(90deg, #1fa2ff, #12d8fa);
+  background: linear-gradient(90deg, #4a00e0, #8e2de2);
 }
 
 .todo-item:nth-child(4n + 2) {
-  background: linear-gradient(90deg, #4a00e0, #8e2de2);
+  background: linear-gradient(90deg, #1fa2ff, #12d8fa);
 }
 
 .todo-item:nth-child(4n + 3) {
@@ -95,6 +95,10 @@ h1 {
 
 .todo-item p {
   cursor: pointer;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .control-icons {
